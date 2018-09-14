@@ -73,5 +73,5 @@ $mail = array(
 	"yamada" => "yamada@mail.com"
 );
 
-var_dump($array);
+var_dump($mail);
 

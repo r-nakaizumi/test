@@ -58,6 +58,20 @@ $countries[0] = "アイスランド共和国";
 $countries[1] = "アイルランド";
 $countries[2] = "アゼルバイジャン共和国";
 
-var_dump($countries);
-echo $countries[2];
+//var_dump($countries);
+//echo $countries[2];
+
+$mail = array();
+$mail["suzuki"] = "suzuki@mail.com";
+mail["yamada"] = "yamada@mail.com";
+
+var_dump($mail);
+
+$mail = array();
+$mail = array(
+	"suzuki" => "suzuki@mail.com",
+	"yamada" => "yamada@mail.com"
+);
+
+var_dump($array);
 

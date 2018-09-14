@@ -63,7 +63,7 @@ $countries[2] = "アゼルバイジャン共和国";
 
 $mail = array();
 $mail["suzuki"] = "suzuki@mail.com";
-mail["yamada"] = "yamada@mail.com";
+$mail["yamada"] = "yamada@mail.com";
 
 var_dump($mail);
 

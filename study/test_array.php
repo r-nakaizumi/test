@@ -124,10 +124,16 @@ $k = array("first"=>"か","second"=>"き","third"=>"く","forth"=>"け","fifth"=
 $s = array("first"=>"さ","second"=>"し","third"=>"す","forth"=>"せ","fifth"=>"そ");
 $aks= array("recodeA"=>$a,"recodeK"=>$k,"recodeS"=>$s);
 
-foreach ($aks as $key => $value){
-	echo "■{$key}<br>\n";
-	foreach ($value as $key2 => $value2){
-	echo "　【 ".$key2." 】：".$value2."<br/>\n";
-	}
-}
+//foreach ($aks as $key => $value){
+//	echo "■{$key}<br>\n";
+//	foreach ($value as $key2 => $value2){
+//	echo "　【 ".$key2." 】：".$value2."<br/>\n";
+//	}
+//}
+
+// 範囲を指定して配列を作成
+$number = range(3,600);
+var_dump($number);
+$abc = range("a","f");
+//var_dump($abc);
 

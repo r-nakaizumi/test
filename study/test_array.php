@@ -34,7 +34,7 @@ $arrayData = array(1,2,3);
 class test{}
 $objectData = new test();
 
-$resourceData = fopen("1-1-1-48-txt.php","r");
+//$resourceData = fopen("1-1-1-48-txt.php","r");
 $nullData = null;
 $allData = array();
 
@@ -45,7 +45,7 @@ $allData = array(
 	$boolData,
 	$arrayData,
 	$objectData,
-	$resourceData,
+	//$resourceData,
 	$nullData
 );
 
@@ -65,7 +65,7 @@ $mail = array();
 $mail["suzuki"] = "suzuki@mail.com";
 $mail["yamada"] = "yamada@mail.com";
 
-var_dump($mail);
+//var_dump($mail);
 
 $mail = array();
 $mail = array(
@@ -73,5 +73,15 @@ $mail = array(
 	"yamada" => "yamada@mail.com"
 );
 
-var_dump($mail);
+//var_dump($mail);
+
+$users = array();
+$users[1]["name"] = "suzuki";
+$users[1]["mail"] = "suzuki@mail.com";
+$users[2]["name"] = "saitou";
+$users[2]["mail"] = "saitou@mail.com";
+$users[3]["name"] = "tanaka";
+$users[3]["mail"] = "tanaka@mail.com";
+
+var_dump($users);
 

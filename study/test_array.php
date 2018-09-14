@@ -111,5 +111,23 @@ $k = array("first"=>"か","second"=>"き","third"=>"く","forth"=>"け","fifth"=
 $s = array("first"=>"さ","second"=>"し","third"=>"す","forth"=>"せ","fifth"=>"そ");
 $aks= array("recodeA"=>$a,"recodeK"=>$k,"recodeS"=>$s);
 
-var_dump($aks);
+//var_dump($aks);
+
+// foreachで配列のキーと値を展開
+$a = array();
+$k = array();
+$s = array();
+$aks = array();
+
+$a = array("first"=>"あ","second"=>"い","third"=>"う","forth"=>"え","fifth"=>"お");
+$k = array("first"=>"か","second"=>"き","third"=>"く","forth"=>"け","fifth"=>"こ");
+$s = array("first"=>"さ","second"=>"し","third"=>"す","forth"=>"せ","fifth"=>"そ");
+$aks= array("recodeA"=>$a,"recodeK"=>$k,"recodeS"=>$s);
+
+foreach ($aks as $key => $value){
+	echo "■{$key}<br>\n";
+	foreach ($value as $key2 => $value2){
+	echo "　【 ".$key2." 】：".$value2."<br/>\n";
+	}
+}
 

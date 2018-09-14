@@ -137,3 +137,67 @@ $number = range(3,600);
 $abc = range("a","f");
 //var_dump($abc);
 
+
+$list = array(
+	"山田" => array(
+		"ID" => "001",
+		"出身" => "函館",
+		"メールアドレス" => "yamada@example.com",
+		"性別" => "女性"
+	),
+	"田中" => array(
+		"ID" => "002",
+		"出身" => "",
+		"メールアドレス" => "tanaka@example.com",
+		"性別" => "男性"
+	),
+	"高橋" => array(
+		"ID" => "003",
+		"出身" => "札幌",
+		"メールアドレス" => "takahashi@example.com",
+		"性別" => "女性"
+	),
+	"井上" => array(
+		"ID" => "004",
+		"出身" => "東京",
+		"メールアドレス" => "inoue@example.com",
+		"性別" => "男性"
+	),
+	"小林" => array(
+		"ID" => "005",
+		"出身" => "大阪",
+		"メールアドレス" => "kobayashi@example.com",
+		"性別" => "男性"
+	),
+	"森" => array(
+		"ID" => "006",
+		"出身" => "沖縄",
+		"メールアドレス" => "mori@example.com",
+		"性別" => "女性"
+	)
+);
+
+// カウンター
+$i = 0;
+// 配列の中の名前を取得
+foreach($list as $key => $member){
+	echo $key;
+	if($i < count($list)-1){
+		echo ",";
+	}
+	$i++;
+}
+
+// 改行
+echo PHP_EOL;
+
+// 配列の中の名前を取得
+echo join(",",array_keys($list)).PHP_EOL;
+
+// 出身が札幌を表示
+foreach($list as $key => $member){
+	if(!isset($member["出身"]) || $member["出身"] == "札幌"){
+		echo $key.PHP_EOL;
+	}
+}
+

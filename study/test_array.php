@@ -133,7 +133,7 @@ $aks= array("recodeA"=>$a,"recodeK"=>$k,"recodeS"=>$s);
 
 // 範囲を指定して配列を作成
 $number = range(3,600);
-var_dump($number);
+//var_dump($number);
 $abc = range("a","f");
 //var_dump($abc);
 

@@ -98,5 +98,18 @@ $aks = array(
 	array("さ","し","す","せ","そ")
 );
 
+//var_dump($aks);
+
+// 多次元配列の連想配列をarray()で作成
+$a = array();
+$k = array();
+$s = array();
+$aks = array();
+
+$a = array("first"=>"あ","second"=>"い","third"=>"う","forth"=>"え","fifth"=>"お");
+$k = array("first"=>"か","second"=>"き","third"=>"く","forth"=>"け","fifth"=>"こ");
+$s = array("first"=>"さ","second"=>"し","third"=>"す","forth"=>"せ","fifth"=>"そ");
+$aks= array("recodeA"=>$a,"recodeK"=>$k,"recodeS"=>$s);
+
 var_dump($aks);
 

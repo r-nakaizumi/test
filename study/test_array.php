@@ -49,7 +49,15 @@ $allData = array(
 	$nullData
 );
 
-echo "<pre>";
-var_dump($allData);
-echo "<pre>";
+//echo "<pre>";
+//var_dump($allData);
+//echo "<pre>";
+
+$countries = array(); // 初期化
+$countries[0] = "アイスランド共和国";
+$countries[1] = "アイルランド";
+$countries[2] = "アゼルバイジャン共和国";
+
+var_dump($countries);
+echo $countries[2];
 
